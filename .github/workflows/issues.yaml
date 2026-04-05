@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: Output event details
         run: |
+          echo "Workflow: ${{ github.workflow }}"
           echo "Event name: ${{ github.event_name }}"
           echo "Action: ${{ github.event.action }}"
           echo "Issue title: ${{ github.event.issue.title }}"
